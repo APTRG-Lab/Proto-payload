@@ -1,6 +1,7 @@
 console.log("============================CODE: 002===============================");
 const SerialPort = require('serialport');
-const porNumber = process.argv[2];
+const portNumber =  "COM18" ; //dikarenakan suatu error pada serialport library
+//const porNumber = process.argv[2];
 console.log("Port at : " + porNumber);
 const mord = new SerialPort(porNumber,{
 	baudRate : 57600// 115200 
